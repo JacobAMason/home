@@ -1,0 +1,5 @@
+*background:#000000
+*foreground:#ffffff
+xterm*faceName: Source Code Pro:size=12:antialias=true
+xterm*termName: xterm-256color
+

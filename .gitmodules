@@ -1,0 +1,12 @@
+[submodule "packer"]
+	path = packer
+	url = git@github.com:JacobAMason/packer.git
+[submodule "puppet"]
+	path = puppet
+	url = git@github.com:JacobAMason/puppet.git
+[submodule "FTCDevSuite"]
+	path = FTCDevSuite
+	url = git@github.com:JacobAMason/FTCDevSuite.git
+[submodule "ftc_app"]
+	path = ftc_app
+	url = git@github.com:FTC3486/ftc_app.git

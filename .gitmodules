@@ -10,3 +10,6 @@
 [submodule "ftc_app"]
 	path = ftc_app
 	url = git@github.com:FTC3486/ftc_app.git
+[submodule "docker-images"]
+	path = docker-images
+	url = git@github.com:JacobAMason/docker-images.git

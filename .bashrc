@@ -14,8 +14,15 @@ if which ruby >/dev/null && which gem >/dev/null; then
 fi
 
 alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -la --group-directories-first'
+alias ll='ls -lha'
 alias tree='tree -C'
+
+dmake_func() {
+    local path=$(realpath .)
+    local project=$(basename $path)
+    docker run -it -v $path:/usr/src/$project -w /usr/src/$project cpp-dev:latest make $@
+}
+alias dmake=dmake_func
 
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 

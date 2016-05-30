@@ -20,7 +20,7 @@ alias tree='tree -C'
 dmake_func() {
     local path=$(realpath .)
     local project=$(basename $path)
-    docker run -it -v $path:/usr/src/$project -w /usr/src/$project cpp-dev:latest make $@
+    docker run -it --rm -v $path:/usr/src/$project -w /usr/src/$project cpp-dev:latest make $@
 }
 alias dmake=dmake_func
 

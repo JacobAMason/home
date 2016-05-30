@@ -24,5 +24,13 @@ dmake_func() {
 }
 alias dmake=dmake_func
 
+gtest_func() {
+    local path=$(realpath .)
+    local project=$(basename $path)
+    mkdir -p build
+    docker run -it --rm -v $path:/usr/src/$project -w "/usr/src/$project/build" cpp-dev:latest /bin/bash -c "cmake .. && make"
+}
+alias gtest=gtest_func
+
 PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 

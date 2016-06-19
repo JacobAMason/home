@@ -13,3 +13,9 @@
 [submodule "docker-images"]
 	path = docker-images
 	url = git@github.com:JacobAMason/docker-images.git
+[submodule ".vim/bundle/vim-ps1"]
+	path = .vim/bundle/vim-ps1
+	url = git@github.com:PProvost/vim-ps1.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git

@@ -11,3 +11,5 @@ set number
 filetype on
 filetype plugin indent on
 
+autocmd BufWritePre * %s/\s\+$//e
+

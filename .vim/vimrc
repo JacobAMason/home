@@ -1,4 +1,5 @@
 syntax enable
+colorscheme monokai
 
 set expandtab
 set smarttab

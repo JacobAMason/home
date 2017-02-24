@@ -52,5 +52,6 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
 setxkbmap -layout dvorak
-exec spectrwm
+#exec spectrwm
+exec i3
 
